@@ -16,16 +16,4 @@ export default {
 
 
 <style scoped>
-button {
-    padding: 10px;
-    width: 200px;
-    margin-right: 10px;
-    height: 80px;
-    background-color: #10aeb2;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    vertical-align: top;
-    border: none;
-}
 </style>

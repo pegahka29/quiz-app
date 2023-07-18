@@ -1,17 +1,29 @@
 <template>
     <div id="app">
         <h1>Math Quiz App</h1>
-        <button>Addition<br/>+</button>
-        <button>Subtraction<br/>-</button>
-        <button>Division<br/>/</button>
-        <button>Multiplication<br/>*</button>
+        <operator-selector
+            @changeOperator="changeOperator"
+        />
     </div>
 </template>
 
 <script>
 
+import OperatorSelector from "@/components/OperatorSelector.vue";
+
 export default {
     name: 'App',
+    components: {OperatorSelector},
+    data() {
+        return {
+            operator: null
+        }
+    },
+    methods: {
+        changeOperator(operator) {
+            this.operator = operator
+        }
+    },
 }
 </script>
 
@@ -23,18 +35,7 @@ export default {
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+    font-size: 24px;
 }
 
-button {
-    padding: 10px;
-    width: 200px;
-    margin-right: 10px;
-    height: 80px;
-    background-color: #10aeb2;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    vertical-align: top;
-    border: none;
-}
 </style>

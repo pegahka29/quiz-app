@@ -1,4 +1,4 @@
-# quiz-app
+# A simple math quiz
 
 ## Project setup
 ```
